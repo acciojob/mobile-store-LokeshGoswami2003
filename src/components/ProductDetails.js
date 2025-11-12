@@ -59,26 +59,32 @@ const ProductDetails = () => {
 
         {isAdmin && (
           <div className="admin-edit">
-            <label>
-              Name
-              <input className="form-control" name="name" value={form.name} onChange={handleChange} />
-            </label>
-            <label>
-              Description
-              <textarea className="form-control" name="description" value={form.description} onChange={handleChange} />
-            </label>
-            <label>
-              Image URL
-              <input className="form-control" name="image" value={form.image} onChange={handleChange} />
-            </label>
-            <label>
-              Price
-              <input className="form-control" name="price" value={form.price} onChange={handleChange} />
-            </label>
+            <div>
+              <label>
+                Name
+                <input className="form-control" name="name" value={form.name} onChange={handleChange} />
+              </label>
+              <label>
+                Description
+                <textarea className="form-control" name="description" value={form.description} onChange={handleChange} />
+              </label>
+              <label>
+                Image URL
+                <input className="form-control" name="image" value={form.image} onChange={handleChange} />
+              </label>
+              <label>
+                Price
+                <input className="form-control" name="price" value={form.price} onChange={handleChange} />
+              </label>
+            </div>
 
-            <button className="float-right" onClick={handleSave} style={{ marginTop: 8 }}>
-              Save
-            </button>
+            <div />
+
+            <div>
+              <button className="float-right" onClick={handleSave} style={{ marginTop: 8 }}>
+                Save
+              </button>
+            </div>
           </div>
         )}
       </div>

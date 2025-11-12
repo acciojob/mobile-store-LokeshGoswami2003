@@ -44,8 +44,8 @@ const AdminPanel = () => {
         <button onClick={handleAdd}>Add</button>
       </div>
 
+      <h3>Total products: {products.length}</h3>
       <div className="admin-list">
-        <h3>Total products: {products.length}</h3>
         {products.map((p, idx) => (
           <div className="admin-row" key={p.id} style={{ borderBottom: "1px solid #ddd", padding: 8 }}>
             <img src={p.image} alt={p.name} style={{ width: 60, height: 60, objectFit: "cover" }} />

@@ -1,19 +1,12 @@
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./../styles/App.css";
 import ProductList from "./ProductList";
 import ProductDetails from "./ProductDetails";
 import AdminPanel from "./AdminPanel";
-import { loadProducts } from "../data/products";
 
 const App = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    setProducts(loadProducts());
-  }, []);
-
   return (
     <div>
       {/* Do not remove the main div */}
@@ -30,7 +23,7 @@ const App = () => {
         </nav>
 
         <Routes>
-          <Route path="/" element={<ProductList products={products} />} />
+          <Route path="/" element={<ProductList />} />
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/admin" element={<AdminPanel />} />
         </Routes>

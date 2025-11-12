@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { loadProducts } from "../data/products";
 
-const ProductList = ({ products }) => {
+const ProductList = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    setProducts(loadProducts());
+  }, []);
+
   return (
     <div className="container">
       <h2>Products</h2>
