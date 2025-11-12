@@ -81,7 +81,7 @@ const ProductDetails = () => {
             <div />
 
             <div>
-              <button className="float-right" onClick={handleSave} style={{ marginTop: 8 }}>
+              <button data-testid="save-btn" className="save-btn" onClick={handleSave} style={{ marginTop: 8 }}>
                 Save
               </button>
             </div>

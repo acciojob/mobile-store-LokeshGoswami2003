@@ -10,4 +10,5 @@ body { font-family: Arial, sans-serif; margin: 0; padding: 16px; }
 
 .edit-link { text-decoration: none; color: #007bff; padding: 6px 8px; }
 .delete-btn { background: #dc3545; color: #fff; border: none; padding: 6px 8px; border-radius: 4px; cursor: pointer; }
+.save-btn { background: #28a745; color: #fff; border: none; padding: 6px 8px; border-radius: 4px; cursor: pointer; }
 
