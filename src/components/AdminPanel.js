@@ -54,10 +54,10 @@ const AdminPanel = () => {
               <div>${p.price}</div>
             </div>
 
-            <button className="float-right" onClick={() => handleDelete(p.id)} style={{ float: "right", marginLeft: 8 }}>
+            <button className="float-right delete-btn" onClick={() => handleDelete(p.id)} style={{ float: "right", marginLeft: 8 }}>
               Delete
             </button>
-            <Link className="float-right" to={`/products/${p.id}?admin=true`} style={{ float: "right", marginRight: 8 }}>
+            <Link className="edit-link" to={`/products/${p.id}?admin=true`} style={{ float: "right", marginRight: 8 }}>
               Edit
             </Link>
           </div>
